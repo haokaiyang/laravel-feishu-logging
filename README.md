@@ -12,11 +12,13 @@ composer require haokaiyang/laravel-feishu-logging
 
 Document: [机器人 | 如何在群聊中使用机器人？](https://getfeishu.cn/hc/zh-cn/articles/360024984973-%E6%9C%BA%E5%99%A8%E4%BA%BA-%E5%A6%82%E4%BD%95%E5%9C%A8%E7%BE%A4%E8%81%8A%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA-#%E4%BD%BF%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA)
 
-Define feishu custom bot Token and set as environment parameters.
-Add to your environment file 
+Define feishu custom bot Token and set as environment parameters. Add to your environment file
+
 token is a part of Feishu Webhook url
-if your Webhook is https://open.feishu.cn/open-apis/bot/hook/xxxxxxxxxxxxxxxxxxxxxxxxxxx
-token : 'xxxxxxxxxxxxxxxxxxxxxxxxxxx'
+
+if your Webhook is (https://open.feishu.cn/open-apis/bot/hook/xxxxxxxxxxxxxxxxxxxxxxxxxxx)
+
+token is 'xxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 ```
 FEISHU_LOGGER_BOT_TOKEN=token
