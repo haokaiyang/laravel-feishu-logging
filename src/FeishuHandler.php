@@ -27,7 +27,6 @@ class FeishuHandler extends AbstractProcessingHandler
         $title = $record['message'];
         unset($record['message'], $record['formatted']);
         $text = json_encode($record, JSON_PRETTY_PRINT + JSON_UNESCAPED_UNICODE + JSON_UNESCAPED_SLASHES);
-        fastcgi_finish_request();
         (new Client())->post($this->webhook, [
             'http_errors' => false,
             'headers'     => ['Content-Type: application/json'],
